@@ -3,7 +3,6 @@
 
 **Integrantes:**
 - Cauan Santos Patti
-- Kayke Anderson Dias Villas Boas de Souza
 
 ---
 
