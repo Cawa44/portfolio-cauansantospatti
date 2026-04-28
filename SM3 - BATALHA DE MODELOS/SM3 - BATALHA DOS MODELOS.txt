@@ -1,0 +1,80 @@
+# Engenharia de Prompt e Aplicações em IA
+## Batalha de Modelos & Engenharia de Prompt (XML)
+
+**Integrantes:**
+- Cauan Santos Patti
+- Kayke Anderson Dias Villas Boas de Souza
+
+---
+
+## 1. Objetivos da Atividade
+
+- **Análise Crítica:** Avaliar a precisão técnica e a conformidade de diferentes LLMs (Large Language Models) em relação a um conjunto estrito de instruções.
+- **Aprender a Aprender:** Desenvolver a metacognição ao identificar as nuances, pontos fortes e limitações de cada arquitetura de IA para tarefas de desenvolvimento Front-end.
+
+---
+
+## 2. A Tarefa
+
+Você deve construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca).
+
+---
+
+## 3. Protocolo de Execução
+
+O prompt estruturado em XML utilizado foi o seguinte:
+
+```xml
+<tarefa>
+  <objetivo>Criar uma página HTML5 única com CSS3 interno (single page).</objetivo>
+  <tema>Formula 1 e a Temporada de 2026</tema>
+  <diretrizes_design>
+    <layout>Responsivo e minimalista.</layout>
+    <paleta_cores>Vermelho, Branco e Preto</paleta_cores>
+    <tipografia>Sans-serif para títulos, Serif para corpo.</tipografia>
+  </diretrizes_design>
+  <obrigatoriedades_tecnicas>
+    <item>Menu de navegação funcional (âncoras).</item>
+    <item>Seção de portfólio ou galeria.</item>
+    <item>Rodapé com informações de contato simuladas.</item>
+    <item>Abas com todos os carros e as informações dele no ano de 2026 e os melhores carros de Formula 1.</item>
+  </obrigatoriedades_tecnicas>
+  <metrica_obrigatoria>
+    Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este código.
+  </metrica_obrigatoria>
+</tarefa>
+```
+
+**Etapas seguidas:**
+
+1. **Submissão:** O mesmo prompt XML foi enviado para todas as IAs via celular.
+2. **Coleta de Dados:** A avaliação focou na fidelidade ao XML — se a IA ignorou alguma tag ou não respeitou as cores — e não apenas na estética do resultado.
+3. **Registro de Performance:** O consumo de tokens foi anotado conforme informado ou estimado por cada ferramenta.
+
+---
+
+## 4. Quadro de Análise Comparativa
+
+| Critério de Avaliação | GPT | Gemini | DeepSeek | Qwen | Grok | Maritaca | Claude |
+|---|---|---|---|---|---|---|---|
+| **Precisão estimada do resultado do prompt** | Bem preciso, apenas pecando em um pedido | Não foi preciso — faltaram detalhes principais, como os carros de F1 | Preciso, mas não respeitou muito a identidade visual | Acertou tudo que foi pedido, incluindo imagens e descrições | Respeitou o estilo minimalista | Resultado horrível — aparentemente sem CSS, menos elaborado do que o esperado | Quase perfeito, pecando apenas nas imagens |
+| **Precisão do HTML** | Quase perfeito — faltaram imagens | Foge do tema Fórmula 1 | Respeitou as ordens | Muito preciso, acertou na galeria | Bem preciso | Foi preciso, mas faltou a galeria | Muito preciso, colocando tudo em ordem |
+| **Criatividade no Conteúdo** | Alta criatividade com fontes e cores | Criativo, mas lembra um fórum de notícias ou site de emissora | Pouco criativo — aparenta ter copiado um site de receita ou de emissora | Muito criativo no logo e nos elementos que enriquecem o site | Bem pouco criativo, sem diferencial | Sem nenhuma criatividade — totalmente cru | Muito criativo, gerando os modelos dos carros por conta própria |
+| **Erros de Sintaxe (Bugs)** | Nenhum erro | Imagens sem conteúdo e fotos completamente fora do contexto (paisagens) | Bug em uma imagem que saía da tela | Bug nas imagens — fotos sem relação com o tema | Sem imagens, sem descrições e elementos incompletos | Cliques vazios | — |
+| **Quantidade de Tokens Gasta** | 3.000 a 3.800 tokens | 1.850 tokens | 3.000 / 3.400 / 3.250 tokens | 2.200 tokens | 10.800 tokens | 1.200 tokens | 38.000 a 42.000 tokens |
+
+---
+
+## 5. Reflexão Crítica (Fink)
+
+**1. Qual modelo demonstrou maior "compreensão" da estrutura XML?**
+
+O Claude demonstrou maior empenho em atender a todos os requisitos. Mesmo apresentando falhas nos cliques, não deixou faltarem elementos e manteve total visão orientada ao usuário.
+
+**2. Houve diferença significativa na verbosidade (tokens) entre as IAs para o mesmo resultado?**
+
+Sim, houve diferença expressiva. Observou-se que quanto maior a quantidade de tokens utilizada, mais funcional e visualmente rico foi o resultado — as IAs com maior consumo extraíram o máximo das possibilidades de programação.
+
+**3. Com base nesta experiência, qual ferramenta você escolheria para prototipagem rápida e qual escolheria para códigos mais complexos?**
+
+Para ambos os casos — prototipagem rápida e códigos mais complexos — a escolha recai sobre **Claude** e **ChatGPT**. Ambos se diferenciaram das demais ferramentas por utilizarem abordagens distintas e não falharem nos conceitos fundamentais exigidos pelo prompt.
