@@ -50,7 +50,7 @@ Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] 
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Predição de Churn** | Algoritmo de classificação para prever saída de clientes. | [Ver Projeto](./projeto-ia-churn/) |
+| **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
  
 ---
  
