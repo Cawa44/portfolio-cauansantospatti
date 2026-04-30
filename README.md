@@ -55,6 +55,9 @@ Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] 
 | **Batalha de Modelos** | Comparativo de I.As para o objetivo desejado | [Ver Projeto](./projeto-batalha-de-modelos/) |
 | **Engenharia Reversa** | Este sistema é um protótipo para um projeto de modificação de formas | [Ver Projeto](./projeto-corrida-de-prompt/) |
 | **Site Modificação de Formas** | Criei um site para criar formas | [Ver Projeto](./skarglass-site/) |
+| **Criação de Site com Plataforma** | Site criado com I.a do Bubble usando o Gemini | [Ver Projeto](./projeto-engenharia-de-software-e-ia-com-bubble/) |
+| **Musicas com I.A** | Musicas criadas com plataforma SUNO | [Ver Projeto](./projeto-musicas-com-suno/) |
+
 ---
  
 ### 🏗 Estrutura do Repositório
