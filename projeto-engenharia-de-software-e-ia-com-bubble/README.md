@@ -37,7 +37,7 @@ Planejamento realizado **fora do Bubble**, antes de criar qualquer tela.
 
 ### Diagrama do Banco de Dados
 
-![Diagrama do Banco de Dados](Print_Banco_de_Dados.png)
+![Diagrama do Banco de Dados](projeto-engenharia-de-software-e-ia-com-bubble/Print Banco de Dados.png)
 
 ### Entidades (Data Types)
 
@@ -82,11 +82,11 @@ Planejamento realizado **fora do Bubble**, antes de criar qualquer tela.
 
 ### Print — Regra de Privacidade: Tabela Budget
 
-![Privacy Budget](Print_Budget.png)
+![Privacy Budget](projeto-engenharia-de-software-e-ia-com-bubble/Print Budget.png)
 
 ### Print — Regra de Privacidade: Tabela Client
 
-![Privacy Client](Print_Cliente.png)
+![Privacy Client](projeto-engenharia-de-software-e-ia-com-bubble/Print Cliente.png)
 
 ### Regras Configuradas
 
@@ -115,7 +115,7 @@ Planejamento realizado **fora do Bubble**, antes de criar qualquer tela.
 
 ### Print — Workflows Organizados
 
-![Workflows](Print_Workflow.png)
+![Workflows](projeto-engenharia-de-software-e-ia-com-bubble/Print Workflow.png)
 
 ### Comentários e Cores dos Workflows
 
