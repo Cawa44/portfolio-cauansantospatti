@@ -45,7 +45,7 @@ Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] 
 #### 🗃️ Modelagem de Banco de Dados
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Sistema de Gestão Escolar** | Modelagem ER e Scripts SQL para uma instituição de ensino. | [Ver Projeto](./projeto-banco-dados/) |
+| **Sistema — Evento Manager** | Sistema de gerenciamento de eventos com modelagem lógica, controle de usuários e script DDL convertido para PostgreSQL com auxílio de IA. | [Ver Projeto](projeto-bando-de-dados) |
  
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
