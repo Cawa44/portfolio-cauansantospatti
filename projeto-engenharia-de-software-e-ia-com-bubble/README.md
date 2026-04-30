@@ -181,3 +181,5 @@ Cada endpoint retorna registros em **JSON paginado** (parâmetros: `cursor` e `l
 - [x] **Print Data > Privacy — Client:** Regra "Apenas o Criador" configurada
 - [x] **Print Workflows:** Lógicas com cores organizadas e comentadas
 - [x] **Estratégia de Saída:** Exportação via Data API documentada
+
+[← Voltar ao Início](https://github.com/Cawa44/portfolio-cauansantospatti)
