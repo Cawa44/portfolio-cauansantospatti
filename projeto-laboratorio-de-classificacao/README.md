@@ -75,3 +75,5 @@ Para garantir maior equidade, propõe-se uma intervenção de **Human-in-the-loo
 - **Evidência Visual:** Print do modelo apresentando a falha de classificação — ✅ incluído
 - **Texto da Parte 2:** Respostas dentro do limite de 300 palavras, com verbos no presente do indicativo — ✅ atendido
 - **Relação técnica-humana:** Conexão explícita entre o dado técnico e o impacto social — ✅ atendido
+
+[← Voltar ao Início](https://github.com/Cawa44/portfolio-cauansantospatti)
