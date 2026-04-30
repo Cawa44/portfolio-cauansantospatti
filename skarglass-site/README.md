@@ -154,3 +154,5 @@ todos **100% operacionais**:
 4. **Filtros avançados e exportação de relatórios** — adição de filtros de visualização mais
    refinados e a possibilidade de exportar relatórios completos com os dados e configurações
    gerados durante o uso da aplicação.
+
+[← Voltar ao Início](https://github.com/Cawa44/portfolio-cauansantospatti)
