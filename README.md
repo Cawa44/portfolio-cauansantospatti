@@ -52,7 +52,7 @@ Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] 
 | :--- | :--- | :---: |
 | **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
 | **Laboratório de Classificação Visual** | Treinamento de modelo enviesado no Teachable Machine e análise do impacto ético e social da classificação incorreta por IA. | [Ver Projeto](projeto-laboratorio-de-classificacao) 
-| **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
+| **Batalha de Modelos** | Comparativo de I.As para o objetivo | [Ver Projeto](./projeto-batalha-de-modelos/) |
 | **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
 | **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
 ---
