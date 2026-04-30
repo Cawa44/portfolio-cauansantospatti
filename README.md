@@ -54,7 +54,7 @@ Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] 
 | **Laboratório de Classificação Visual** | Treinamento de modelo enviesado no Teachable Machine e análise do impacto ético e social da classificação incorreta por IA. | [Ver Projeto](projeto-laboratorio-de-classificacao) 
 | **Batalha de Modelos** | Comparativo de I.As para o objetivo desejado | [Ver Projeto](./projeto-batalha-de-modelos/) |
 | **Engenharia Reversa** | Este sistema é um protótipo para um projeto de modificação de formas | [Ver Projeto](./projeto-corrida-de-prompt/) |
-| **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
+| **Site Modificação de Formas** | Criei um site para criar formas | [Ver Projeto](./skarglass-site/) |
 ---
  
 ### 🏗 Estrutura do Repositório
