@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: {userId} (Firebase Auth UID)
+    // Fields:
+    //   - uid: string (required) - User's UID
+    //   - displayName: string (optional) - User's name
+    //   - email: string (required) - User's email
+    //   - photoURL: string (optional) - User's photo URL
+    //   - lastComplexity: number (optional) - Last used complexity
+    //   - lastContrast: number (optional) - Last used contrast
+    //   - lastColor: string (optional) - Last used color
+    //   - createdAt: timestamp (required) - Creation time
+    //   - updatedAt: timestamp (required) - Last update time
+    //
+    // Collection: users/{userId}/history
+    // Document ID: {blobId} (Auto-generated)
+    // Fields:
+    //   - uid: string (required) - Owner UID
+    //   - path: string (required) - SVG path data
+    //   - color: string (required) - Fill color
+    //   - complexity: number (required) - Complexity value
+    //   - contrast: number (required) - Contrast value
+    //   - createdAt: timestamp (required) - Creation time
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidUser(data) {
+      return data.uid == request.auth.uid &&
+             isValidEmail(data.email) &&
+             (data.displayName == null || (data.displayName is string && data.displayName.size() < 100)) &&
+             (data.lastComplexity == null || (data.lastComplexity is number && data.lastComplexity >= 3 && data.lastComplexity <= 40)) &&
+             (data.lastContrast == null || (data.lastContrast is number && data.lastContrast >= 0 && data.lastContrast <= 100)) &&
+             (data.lastColor == null || (data.lastColor is string && data.lastColor.size() < 20)) &&
+             (data.lastForm == null || (data.lastForm is string && data.lastForm.size() < 20)) &&
+             (data.lastStyleMode == null || (data.lastStyleMode is string && data.lastStyleMode.size() < 20));
+    }
+
+    function isValidBlob(data) {
+      return data.uid == request.auth.uid &&
+             data.path is string && data.path.size() < 10000 &&
+             data.color is string && data.color.size() < 20 &&
+             data.complexity is number &&
+             data.contrast is number &&
+             (data.form == null || (data.form is string && data.form.size() < 20)) &&
+             (data.styleMode == null || (data.styleMode is string && data.styleMode.size() < 20));
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      // Users can only read and write their own profile
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidUser(request.resource.data);
+      allow update: if isOwner(userId) && isValidUser(request.resource.data);
+      
+      match /history/{blobId} {
+        // Users can only read and write their own history
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidBlob(request.resource.data);
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
