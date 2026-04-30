@@ -100,3 +100,6 @@ O script DDL completo está disponível no repositório do projeto:
 - **Controle de Usuários:** Tabelas `usuario` e `log_auditoria` integradas e adaptadas ao contexto do projeto — ✅
 - **Conversão para PostgreSQL:** Script gerado no MySQL Workbench convertido via IA e revisado pelo grupo para compatibilidade com PostgreSQL (uso de `SERIAL`, tipos de dados e integridade referencial) — ✅
 - **Atividade em grupo** — ✅
+
+
+[← Voltar ao Início](https://github.com/Cawa44/portfolio-cauansantospatti)
