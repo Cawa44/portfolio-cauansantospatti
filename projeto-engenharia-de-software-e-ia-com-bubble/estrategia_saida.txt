@@ -1,0 +1,62 @@
+ESTRATÉGIA DE SAÍDA — SISTEMA DE GERENCIAMENTO DE ORÇAMENTOS (BUBBLE)
+======================================================================
+Autor: [Seu Nome]
+Data: [Data de entrega]
+
+---
+
+RISCO IDENTIFICADO: VENDOR LOCK-IN
+
+O Bubble.io retém a posse do código-fonte gerado pela plataforma. Isso significa que,
+caso o serviço seja descontinuado, tenha um aumento de preços inviável ou precise
+ser reescrito em tecnologia tradicional, não é possível simplesmente exportar o
+código e compilá-lo em outro ambiente.
+
+---
+
+PLANO DE MITIGAÇÃO — EXPORTAÇÃO DE DADOS VIA API
+
+Para garantir a portabilidade dos dados, o Bubble oferece uma Data API REST nativa.
+O procedimento de extração seria o seguinte:
+
+1. Habilitar a Data API:
+   Acessar Settings > API > Enable Data API e marcar as tabelas
+   "User", "Cliente" e "Orcamento" como expostas via API.
+
+2. Autenticar as requisições:
+   Gerar um API Token privado em Settings > API > Generate a new API token.
+   Usar o header:  Authorization: Bearer SEU_TOKEN
+
+3. Exportar cada tabela via chamadas HTTP GET:
+   - Usuários:    GET https://seuapp.bubbleapps.io/api/1.1/obj/user
+   - Clientes:    GET https://seuapp.bubbleapps.io/api/1.1/obj/cliente
+   - Orçamentos:  GET https://seuapp.bubbleapps.io/api/1.1/obj/orcamento
+
+   Cada endpoint retorna os registros em formato JSON paginado
+   (parâmetros: cursor e limit). Iterar até buscar todos os registros.
+
+4. Armazenar os arquivos JSON localmente como backup periódico,
+   ou automatizar via script (ex: Node.js / Python com axios/requests).
+
+---
+
+REESCRITA EM TECNOLOGIA TRADICIONAL
+
+Com os dados exportados em JSON, a migração para uma stack tradicional seria:
+
+- Frontend: React.js (ou Next.js para SSR)
+- Backend:  Node.js com Express ou NestJS
+- Banco:    PostgreSQL (os campos do Bubble mapeiam diretamente para colunas SQL)
+- Auth:     JWT ou NextAuth.js substituindo o sistema de login do Bubble
+
+A estrutura de tabelas já foi projetada de forma relacional (Passo 2 da atividade),
+o que facilita a criação do schema SQL equivalente sem retrabalho de modelagem.
+
+---
+
+CONCLUSÃO
+
+O risco de vendor lock-in é real, mas gerenciável. A chave é nunca deixar os dados
+presos: manter backups regulares via Data API e documentar bem os workflows (como
+feito nesta atividade) garante que a lógica de negócio possa ser reimplementada
+em qualquer plataforma no futuro.

@@ -1,0 +1,100 @@
+# COMENTÁRIOS DOS WORKFLOWS — SISTEMA DE ORÇAMENTOS
+# Cole o texto de cada bloco no campo "Notes" do respectivo Workflow no Bubble
+# Cor sugerida está indicada em cada seção
+
+=====================================================================
+ COR: AZUL — Autenticação
+=====================================================================
+
+[WF] Sign Up
+---
+Registra um novo usuário na plataforma.
+Ação: Cria o registro na tabela User com email, senha e role = "Colaborador" (Option Set).
+Navega para a página /dashboard após o cadastro.
+ATENÇÃO: O campo role nunca deve ser definido como texto livre. Usar sempre o Option Set "Role".
+
+[WF] Log In
+---
+Autentica o usuário com email e senha.
+Em caso de erro, exibe mensagem "E-mail ou senha incorretos" sem revelar qual campo está errado
+(prevenção de enumeração de usuários — OWASP A07).
+Navega para /dashboard em caso de sucesso.
+
+[WF] Log Out
+---
+Encerra a sessão do usuário atual e redireciona para a página de login.
+
+=====================================================================
+ COR: VERDE — Sucesso / Salvamento / Navegação
+=====================================================================
+
+[WF] Criar Orçamento
+---
+Salva um novo registro na tabela Orçamento.
+Campos obrigatórios: title, value, client (referência ao Cliente), created_by = Current User.
+Status inicial: sempre "Pendente" via Option Set "Status Orçamento" — NUNCA usar texto "Pendente" diretamente.
+Após salvar, navega para a lista de orçamentos e exibe confirmação.
+
+[WF] Editar Orçamento
+---
+Atualiza os campos title, description, value e client do orçamento selecionado.
+Restrição: só executa se Current User = This Orçamento's Creator (validação de ownership).
+O campo created_by NÃO é alterado neste workflow.
+
+[WF] Alterar Status do Orçamento
+---
+Atualiza apenas o campo status do Orçamento.
+Valores permitidos: "Pendente", "Aprovado" ou "Rejeitado" — todos via Option Set.
+Disparado pelo dropdown de status na lista ou na página de detalhe.
+
+[WF] Criar Cliente
+---
+Salva um novo registro na tabela Cliente.
+Campo created_by = Current User definido automaticamente.
+Após salvar, fecha o popup (ou navega para /clientes).
+
+=====================================================================
+ COR: VERMELHO — Exclusão / Ações Destrutivas
+=====================================================================
+
+[WF] Deletar Orçamento
+---
+AÇÃO DESTRUTIVA — exige confirmação do usuário antes de executar.
+Passo 1: Exibe popup de confirmação "Deseja excluir este orçamento? Esta ação não pode ser desfeita."
+Passo 2 (somente após confirmação): Deleta o registro da tabela Orçamento.
+Restrição: só executa se Current User = This Orçamento's Creator.
+
+[WF] Deletar Cliente
+---
+AÇÃO DESTRUTIVA — verificar se o cliente possui orçamentos vinculados antes de deletar.
+Se existirem orçamentos: exibir alerta "Este cliente possui orçamentos. Exclua-os antes de continuar."
+Se não existirem: exibir confirmação e deletar.
+
+=====================================================================
+ COR: AMARELO/LARANJA — Avisos / Validações
+=====================================================================
+
+[WF] Validação de Formulário (Orçamento)
+---
+Executado antes de salvar. Verifica:
+- title não está vazio
+- value é maior que zero
+- client foi selecionado
+Se alguma validação falhar, exibe mensagem de erro específica e interrompe o fluxo
+(Add a pause / Only when = condição de validação verdadeira).
+
+=====================================================================
+ REGRAS DE PRIVACIDADE (Data > Privacy) — LEMBRETE
+=====================================================================
+
+Tabela Orçamento:
+  Regra: "Apenas o Criador"
+  Condição: This Orçamento's Creator is Current User
+  Marcar: View all fields, Find this in searches
+
+Tabela Cliente:
+  Regra: "Apenas o Criador"
+  Condição: This Cliente's created_by is Current User
+  Marcar: View all fields, Find this in searches
+
+DELETAR a regra genérica "Everyone can see all data" gerada automaticamente pela IA.
