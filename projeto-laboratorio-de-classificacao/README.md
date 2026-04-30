@@ -33,7 +33,7 @@ Utilizando o **Teachable Machine (Google)**, foi realizado o treinamento de um m
 
 ### Evidência Visual — Falha de Classificação
 
-![Print do Teachable Machine exibindo classificação incorreta](evidencia_teachable_machine.png)
+![Print do Teachable Machine exibindo classificação incorreta](Foto.jpeg)
 
 > O modelo classificou a imagem como **SEM OCUL... com 85% de confiança** e **COM OCUL... com apenas 15%**, apesar de o sujeito apresentar características que deveriam acionar a categoria oposta. O erro evidencia a fragilidade do modelo diante de padrões não representados no treinamento.
 
