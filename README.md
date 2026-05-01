@@ -1,4 +1,4 @@
-# [Cauan Santos Patti]
+# Cauan Santos Patti
 > Estudante de [Analise e Desenvolvimento de Sistemas]
  
 ---
@@ -11,7 +11,8 @@
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o [2º] período de [Analise e Desenvolvimento de Sistemas] na [UNICID]. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em [Desenvolvimento Backend / Análise de Dados / Cyber-segurança / Infraestrutura].
+Sou estudante de Análise e Desenvolvimento de Sistemas na UNICID, atualmente no 2º período, com foco em construir soluções reais através da tecnologia. Minha trajetória é guiada pela curiosidade e pela vontade de entender como sistemas funcionam — da lógica do código à infraestrutura que o sustenta.
+Tenho interesse sólido em quatro frentes: Desenvolvimento Backend, Análise de Dados, Cyber-segurança e Infraestrutura. Essa combinação me permite pensar em soluções de forma ampla, considerando tanto a performance quanto a segurança e a confiabilidade dos sistemas que desenvolvo.
  
 * **Habilidades Técnicas:** [Python, HTML, CSS, SQL, C].
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação assertiva e pensamento crítico.
