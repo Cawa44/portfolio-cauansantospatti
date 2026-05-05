@@ -46,7 +46,7 @@ Com foco em **produtividade e nicho profissional**, o ctBlun transforma a experi
 ![Formulário de nova entrevista com campos de candidato, cargo, data e sala Jitsi gerada automaticamente](3.jpeg)
 
 ### Perfil do Recrutador
-![Perfil do recrutador Cauan Patti com resumo de avaliações e informações do app](Screenshot_21.jpeg)
+![Perfil do recrutador Cauan Patti com resumo de avaliações e informações do app](Screenshot_21.png)
 
 ### Detalhe da Entrevista
 ![Tela de detalhe com opções de iniciar entrevista, compartilhar link da sala e marcar como realizada](2.jpeg)
