@@ -37,19 +37,19 @@ Com foco em **produtividade e nicho profissional**, o ctBlun transforma a experi
 ## 📸 Capturas de Tela
 
 ### Sala de Videoconferência — Jitsi Meet integrado
-![Sala Jitsi ao vivo com o ctBlun](ft1.jpeg)
+![Sala Jitsi ao vivo com o ctBlun](6.jpeg)
 
 ### Lista de Entrevistas Agendadas
-![Tela de entrevistas com candidato João Cardoso agendado](ft2.jpeg)
+![Tela de entrevistas com candidato João Cardoso agendado](4.jpeg)
 
 ### Agendamento de Nova Entrevista
-![Formulário de nova entrevista com campos de candidato, cargo, data e sala Jitsi gerada automaticamente](ft3.jpeg)
+![Formulário de nova entrevista com campos de candidato, cargo, data e sala Jitsi gerada automaticamente](3.jpeg)
 
 ### Perfil do Recrutador
 ![Perfil do recrutador Cauan Patti com resumo de avaliações e informações do app](ft4.jpeg)
 
 ### Detalhe da Entrevista
-![Tela de detalhe com opções de iniciar entrevista, compartilhar link da sala e marcar como realizada](ft5.jpeg)
+![Tela de detalhe com opções de iniciar entrevista, compartilhar link da sala e marcar como realizada](2.jpeg)
 
 ---
 
