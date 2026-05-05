@@ -57,7 +57,7 @@ Tenho interesse sólido em quatro frentes: Desenvolvimento Backend, Análise de 
 | **SM4 - Engenharia Reversa** | Este sistema é um protótipo para um projeto de modificação de formas | [Ver Projeto](./projeto-corrida-de-prompt/) |
 | **SM5 - Do Clone ao Produto Mínimo Viável (MVP+)** | Criei um site para criar formas | [Ver Projeto](./skarglass-site/) |
 | **SM6 - Engenharia de Software e IA com Bubble.io** | Site criado com I.a do Bubble usando o Gemini | [Ver Projeto](./projeto-engenharia-de-software-e-ia-com-bubble/) |
-| **SM7 - Construção de Portfólio Profissional no GitHub** | Musicas criadas com plataforma SUNO | [Ver Projeto](./projeto-musicas-com-suno/) |
+| **SM7 - Criação de Musicas no SUNO** | Musicas criadas com plataforma SUNO | [Ver Projeto](./projeto-musicas-com-suno/) |
 | **SM8 - Desenvolvimento de App de Videoconferência com Manus AI e Jitsi** | Aplicativo Criado com a ferramenta em Manus A.I | [Ver Projeto](./projeto-desenvolvimento-de-app-de-videoconferencia-com-manus-ai-e-jitsi/) |
 
 ---
