@@ -51,13 +51,13 @@ Tenho interesse sólido em quatro frentes: Desenvolvimento Backend, Análise de 
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Corrida de Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
-| **Laboratório de Classificação Visual** | Treinamento de modelo enviesado no Teachable Machine e análise do impacto ético e social da classificação incorreta por IA. | [Ver Projeto](projeto-laboratorio-de-classificacao) 
-| **Batalha de Modelos** | Comparativo de I.As para o objetivo desejado | [Ver Projeto](./projeto-batalha-de-modelos/) |
-| **Engenharia Reversa** | Este sistema é um protótipo para um projeto de modificação de formas | [Ver Projeto](./projeto-corrida-de-prompt/) |
-| **Site Modificação de Formas** | Criei um site para criar formas | [Ver Projeto](./skarglass-site/) |
-| **Criação de Site com Plataforma** | Site criado com I.a do Bubble usando o Gemini | [Ver Projeto](./projeto-engenharia-de-software-e-ia-com-bubble/) |
-| **Musicas com I.A** | Musicas criadas com plataforma SUNO | [Ver Projeto](./projeto-musicas-com-suno/) |
+| **SM1 - A Corrida do Prompt** | Desenvolvendo Imagem com Qwen 3.5 | [Ver Projeto](./projeto-corrida-de-prompt/) |
+| **SM2 - Laboratório de Classificação Visual** | Treinamento de modelo enviesado no Teachable Machine e análise do impacto ético e social da classificação incorreta por IA. | [Ver Projeto](projeto-laboratorio-de-classificacao) 
+| **SM3 - Batalha de Modelos & Engenharia de Prompt (XML)** | Comparativo de I.As para o objetivo desejado | [Ver Projeto](./projeto-batalha-de-modelos/) |
+| **SM4 - Engenharia Reversa** | Este sistema é um protótipo para um projeto de modificação de formas | [Ver Projeto](./projeto-corrida-de-prompt/) |
+| **SM5 - Do Clone ao Produto Mínimo Viável (MVP+)** | Criei um site para criar formas | [Ver Projeto](./skarglass-site/) |
+| **SM6 - Engenharia de Software e IA com Bubble.io** | Site criado com I.a do Bubble usando o Gemini | [Ver Projeto](./projeto-engenharia-de-software-e-ia-com-bubble/) |
+| **SM7 - Construção de Portfólio Profissional no GitHub** | Musicas criadas com plataforma SUNO | [Ver Projeto](./projeto-musicas-com-suno/) |
 
 ---
  
