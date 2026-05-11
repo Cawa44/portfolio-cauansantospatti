@@ -26,7 +26,7 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 | 05 | [Velvet & Bone] | [Indie Rock/Indie Pop] | [Arquivo MP3](./audio/musica5.mp3) |
  
 ## 📄 Processo de Criação
-1. **Curadoria:** Seleção de 5 letras do artista base.
+1. **Curadoria:** Seleção de 5 letras dos artistas base.
 2. **Prompt Engineering:** Configuração das instruções do Gems para mimetizar o vocabulário e a métrica.
 3. **Produção:** Geração das letras e posterior conversão em áudio no Suno AI, ajustando parâmetros de gênero musical e BPM.
  
