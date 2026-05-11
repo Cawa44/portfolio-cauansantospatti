@@ -19,7 +19,7 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 ## 🎧 Músicas Geradas
 | Faixa | Título | Estilo/Referência | Link do Áudio |
 | :--- | :--- | :--- | :--- |
-| 01 | [DROWNED AND KILLER] | [ROCK METAL] | [Arquivo MP3](https://github.com/[projeto-musicas-com-suno/audio/DROWNEDANDKILLER.mp3/]) |
+| 01 | [DROWNED AND KILLER] | [ROCK METAL] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/projeto-musicas-com-suno/audio/DROWNED%20AND%20KILLER.mp3]) |
 | 02 | [HATERTEKK] | [HARDSTYLE] | [Arquivo MP3](./audio/musica2.mp3) |
 | 03 | [Vintage Shirt Hurt] | [Pop/Indie Rock] | [Arquivo MP3](./audio/musica3.mp3) |
 | 04 | [KILLER INFLUENCE] | [ROCK METAL] | [Arquivo MP3](./audio/musica4.mp3) |
