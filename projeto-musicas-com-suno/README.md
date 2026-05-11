@@ -20,10 +20,10 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 | Faixa | Título | Estilo/Referência | Link do Áudio |
 | :--- | :--- | :--- | :--- |
 | 01 | [DROWNED AND KILLER] | [ROCK METAL] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/audio/DROWNED%20AND%20KILLER.mp3) |
-| 02 | [HATERTEKK] | [HARDSTYLE] | [Arquivo MP3](./audio/musica2.mp3) |
-| 03 | [Vintage Shirt Hurt] | [Pop/Indie Rock] | [Arquivo MP3](./audio/musica3.mp3) |
-| 04 | [KILLER INFLUENCE] | [ROCK METAL] | [Arquivo MP3](./audio/musica4.mp3) |
-| 05 | [Velvet & Bone] | [Indie Rock/Indie Pop] | [Arquivo MP3](./audio/musica5.mp3) |
+| 02 | [HATERTEKK] | [HARDSTYLE] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/audio/HATERTEKK.mp3) |
+| 03 | [Vintage Shirt Hurt] | [Pop/Indie Rock] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/audio/Vintage%20Shirt%20Hurt.mp3) |
+| 04 | [KILLER INFLUENCE] | [ROCK METAL] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/audio/KILLER%20INFLUENCE.mp3) |
+| 05 | [Velvet & Bone] | [Indie Rock/Indie Pop] | [Arquivo MP3](https://github.com/Cawa44/portfolio-cauan-santos-patti/blob/main/audio/Velvet%20%26%20Bone.mp3) |
  
 ## 📄 Processo de Criação
 1. **Curadoria:** Seleção de 5 letras dos artistas base.
